@@ -67,8 +67,8 @@ main {
     background-color: #F4D04E;
     border-radius: 0.25rem;
     font-weight: 800;
-    font-size: var(--sm-text);
     line-height: var(--lineheight);
+    font-size: clamp(0.75rem, 0.97vw, 0.875rem);
 }
 
 .theme__banner--inner {
@@ -76,7 +76,7 @@ main {
 }
 
 .publish-time__text {
-    font-size: var(--sm-text);
+    font-size: clamp(0.75rem, 0.97vw, 0.875rem);
     font-weight: 500;
     line-height: var(--lineheight);
 }
@@ -91,6 +91,7 @@ main {
     line-height: var(--lineheight);
     padding-bottom: 0.75rem;
     transition: 0.6s;
+    font-size: clamp(1.25rem, 1.67vw, 1.5rem);
 }
 
 .card__text {
@@ -98,6 +99,7 @@ main {
     color: #6B6B6B;
     line-height: var(--lineheight);
     padding-bottom: 1.5rem;
+    font-size: clamp(0.875rem, 1.11vw, 1rem);
 }
 
 .sign__inner {
@@ -113,6 +115,18 @@ main {
 }
 
 .sign__author {
-    font-size: var(--sm-text);
+    font-size: clamp(0.75rem, 0.97vw, 0.875rem);
     font-weight: 800;
+}
+
+@media (max-width: 376px) {
+    .card {
+        width: 327px;
+        border: 1px solid #111111;
+        border-radius: 1.25rem;
+        box-shadow: 8px 8px 0 #111111;
+        line-height: var(--lineheight);
+        background-color: #ffffff;
+        transition: 0.6s;
+    }
 }
