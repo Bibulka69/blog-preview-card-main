@@ -59,7 +59,7 @@ As part of the challenge, I learned how to make styles mobile-friendly without u
 
 ### Continued development
 
-As part of my training, I plan to pay more attention to studying all the pdeudo classes and their capabilities.
+As part of my training, I plan to pay more attention to studying all the pseudo classes and their capabilities.
 
 ### Useful resources
 
