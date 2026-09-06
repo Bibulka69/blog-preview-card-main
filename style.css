@@ -14,7 +14,7 @@
 
 body {
     font-family: 'Figtree', serif;
-    
+    background-color: #F4D04E;
 }
 
 main {
@@ -31,24 +31,44 @@ main {
     border-radius: 1.25rem;
     box-shadow: 8px 8px 0 #111111;
     line-height: var(--lineheight);
+    background-color: #ffffff;
+    transition: 0.6s;
+}
+
+.card:hover {
+    box-shadow: 16px 16px 0 #111111;
+    transition: 0.6s;
+}
+
+.card:hover .card__title {
+    color: #F4D04E;
+    transition: 0.6s;
 }
 
 .card__inner {
     display: flex;
     flex-direction: column;
-    padding: 1.25rem 1.25rem;
+    padding: 1.5rem 1.5rem;
 }
 
 .card__preview {
+    display: block;
     width: 100%;
-    border-radius: 1.25rem;
-    /* padding-bottom: 1.25rem; */
+    height: fit-content;
+    border-radius: 0.625rem;
+}
+
+.card__preview--inner {
+    padding-bottom: 1.5rem;
 }
 
 .theme__banner {
     width: fit-content;
     background-color: #F4D04E;
     border-radius: 0.25rem;
+    font-weight: 800;
+    font-size: var(--sm-text);
+    line-height: var(--lineheight);
 }
 
 .theme__banner--inner {
@@ -56,5 +76,43 @@ main {
 }
 
 .publish-time__text {
+    font-size: var(--sm-text);
+    font-weight: 500;
+    line-height: var(--lineheight);
+}
 
+.publish-time__text--inner {
+    padding: 0.75rem 0 0.75rem 0;
+}
+
+.card__title {
+    font-size: var(--title);
+    font-weight: 800;
+    line-height: var(--lineheight);
+    padding-bottom: 0.75rem;
+    transition: 0.6s;
+}
+
+.card__text {
+    font-weight: 500;
+    color: #6B6B6B;
+    line-height: var(--lineheight);
+    padding-bottom: 1.5rem;
+}
+
+.sign__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sign__picture {
+    width: 32px;
+    height: 32px;
+}
+
+.sign__author {
+    font-size: var(--sm-text);
+    font-weight: 800;
 }
